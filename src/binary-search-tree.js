@@ -64,7 +64,7 @@ class BinarySearchTree {
 
   find(data) {
     let currentNode  = this.top;
-    if(!currentNode) {
+    if(!this.top) {
       return null;
     }
     
@@ -77,6 +77,8 @@ class BinarySearchTree {
         return currentNode;
     }
 }
+
+return null;
   }
 
   remove(data) {
