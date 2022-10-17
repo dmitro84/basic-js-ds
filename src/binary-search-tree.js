@@ -21,6 +21,9 @@ class BinarySearchTree {
 
 
   root(){
+    if(!this.top){
+      return null;
+    }
     return {
       data: this.top.data
       };
