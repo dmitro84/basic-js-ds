@@ -41,9 +41,10 @@ const { NotImplementedError } = require('../extensions/index.js');
     if(!this.head){
       return;
     }
-
+    let currentValue  = this.head.value;
     this.head = this.head.next;
-}
+    return currentValue;
+  }
 
   getUnderlyingList() {
     return this.head;
